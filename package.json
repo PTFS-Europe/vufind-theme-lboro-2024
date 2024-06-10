@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bootstrap": "^3.4.1",
     "gulp-cli": "^3.0.0"
   },
   "name": "vufind-theme-lboro-2024",
