@@ -22,10 +22,9 @@
   "homepage": "https://github.com/PTFS-Europe/vufind-theme-lboro-2024#readme",
   "devDependencies": {
     "gulp": "^5.0.0",
-    "gulp-autoprefixer": "^9.0.0",
+    "gulp-cssmin": "^0.2.0",
     "gulp-less": "^5.0.0",
-    "gulp-sass": "^5.1.0",
     "less": "^4.2.0",
-    "sass": "^1.77.4"
+    "less-plugin-clean-css": "^1.5.1"
   }
 }
