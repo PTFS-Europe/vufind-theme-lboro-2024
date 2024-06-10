@@ -6,7 +6,7 @@ const cleanCSSPlugin     = new lessPluginCleanCss({advanced: true});
 
 // build less
 function compileLess() {
-  return gulp.src('less/**/*.less') // Path to your LESS files
+  return gulp.src('less/**/compiled.less') // Path to your LESS files
     .pipe(less({
       plugins: [cleanCSSPlugin]
     }).on('error', console.error))
@@ -18,6 +18,6 @@ gulp.task('less', compileLess);
 
 // watch less
 function watchLess() {
-    gulp.watch('less/**/*.less', compileLess);
+    gulp.watch('less/**/compiled.less', compileLess);
 }
 gulp.task('less-watch', watchLess);
