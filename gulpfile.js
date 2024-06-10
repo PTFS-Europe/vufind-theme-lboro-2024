@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 function compileSass() {
   return gulp.src('sass/**/*.scss') // Path to your SCSS files
