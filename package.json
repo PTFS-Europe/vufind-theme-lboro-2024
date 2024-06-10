@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/PTFS-Europe/vufind-theme-lboro-2024/issues"
   },
-  "homepage": "https://github.com/PTFS-Europe/vufind-theme-lboro-2024#readme"
+  "homepage": "https://github.com/PTFS-Europe/vufind-theme-lboro-2024#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0"
+  }
 }
