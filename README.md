@@ -45,8 +45,8 @@ brew install node
 
 Once `node` is installed, you can install the dependencies with:
 ```
-npm --only=dev install
 npm install
+npm --include=dev install
 ```
 
 Lastly, you can run the following to build the css:
