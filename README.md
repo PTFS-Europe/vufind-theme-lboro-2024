@@ -15,7 +15,7 @@ Once you have a copy of the VuFind cloned locally, we can then add this reposito
 ```
 cd /path/to/your/vufind/clone
 cd themes/
-git submodule add git submodule add https://github.com/PTFS-Europe/vufind-theme-lboro-2024.git ./vufind-theme-lboro-2024
+git submodule add https://github.com/PTFS-Europe/vufind-theme-lboro-2024.git ./vufind-theme-lboro-2024
 ```
 **Note:** this will make the vufind clone unclean. This is fine, but be careful not to do a `git push` outside of the newly cloned theme directory.
 
