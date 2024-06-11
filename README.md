@@ -17,9 +17,9 @@ cd /path/to/your/vufind/clone
 cd themes/
 git submodule add git submodule add https://github.com/PTFS-Europe/vufind-theme-lboro-2024.git ./vufind-theme-lboro-2024
 ```
+**Note:** this will make the vufind clone unclean. This is fine, but be careful not to do a `git push` outside of the newly cloned theme directory.
 
 This will create a new subdirectory in the themes directory, called `vufind-theme-lboro-2024`. We can now cd into this directory:
-
 ```
 cd /path/to/your/vufind/clone
 cd themes/vufind-theme-lboro-2024/
