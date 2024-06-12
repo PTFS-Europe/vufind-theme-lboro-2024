@@ -22,24 +22,36 @@ body {
 }
 
 /* -- Layout --- */
-.main .container { background-color: @white; }
-.mainbody { padding-top: 1rem; }
+.main .container {
+  background-color: @white;
+}
+.mainbody {
+  padding-top: 1rem;
+}
 
 /* --- Header --- */
-.navbar { border-radius: 0; }
+.navbar {
+  border-radius: 0;
+}
 .banner {
   width: auto;
   color: #fff;
 
-  a { color: #fff; }
+  a {
+    color: #fff;
+  }
 }
-.banner .navbar-right { margin-top: calc((@banner-height-sm - 50px) / 2); } // Put right nav in the middle
+.banner .navbar-right {
+  margin-top: calc((@banner-height-sm - 50px) / 2);
+} // Put right nav in the middle
 .banner .navbar-brand {
   width: (170 / 65) * @banner-height-sm;
   height: @banner-height-sm;
 }
 @media (min-width: 768px) {
-  .banner .navbar-right { margin-top: calc((@banner-height - 50px) / 2); }
+  .banner .navbar-right {
+    margin-top: calc((@banner-height - 50px) / 2);
+  }
   .banner .navbar-brand {
     width: (170 / 65) * @banner-height;
     height: @banner-height;
@@ -52,7 +64,9 @@ header {
   font-weight: 500;
   color: @white;
 
-  .navbar-nav { margin-top: 0; }
+  .navbar-nav {
+    margin-top: 0;
+  }
   a,
   .nav a,
   .btn-link,
@@ -79,20 +93,26 @@ header {
     }
   }
   .navbar-toggle {
-    margin: .5rem;
+    margin: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: @reduced-font-size;
   }
-  .dropdown-menu a { color: @black; }
+  .dropdown-menu a {
+    color: @black;
+  }
   .dropdown-menu a:hover {
     background-color: @header-light;
     color: @black;
   }
   .dropdown-menu .active a,
-  .dropdown-menu .active a:hover { background-color: @header-bg; }
+  .dropdown-menu .active a:hover {
+    background-color: @header-bg;
+  }
 
-  .form-control { border: 0; }
+  .form-control {
+    border: 0;
+  }
   .form-control:focus {
     padding-bottom: 3px; // Smaller font-size means smaller jump
     border-bottom: 3px solid @gold;
@@ -102,24 +122,28 @@ header {
     width: 200px;
     height: 100%;
     margin-top: 5px;
-    .background-image('vufind_logo_dark.png');
+    background-image: "vufind_logo_dark.png";
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     &,
     &:active,
     &:hover,
-    &:focus { color: transparent; }
-    &.lang-ar { .background-image('vufind_logo_ar_dark.png'); }
+    &:focus {
+      color: transparent;
+    }
+    &.lang-ar {
+      background-image: "vufind_logo_ar_dark.png";
+    }
   }
 }
 
 #account-icon.text-success,
 #account-icon.text-warning,
 #account-icon.text-danger {
-  margin-left: -.25rem;
+  margin-left: -0.25rem;
   margin-top: -0.5rem;
-  margin-bottom: -.5rem;
+  margin-bottom: -0.5rem;
   padding: 0.5rem;
   background-color: @header-light;
   border-radius: 100%;
@@ -146,25 +170,41 @@ a:hover .login-dropdown-caret {
   background-color: transparent;
   border-radius: 0;
 }
-.breadcrumb a { color: @link-color; }
-.breadcrumb .active { color: @black; }
-.breadcrumb .active a { color: #37474F; } /* Material Blue Grey 800 */
-.breadcrumb .active a:hover { color: @link-color-hover; } /* Material Blue Grey 900 */
-.breadcrumb > li+li::before {
+.breadcrumb a {
+  color: @link-color;
+}
+.breadcrumb .active {
+  color: @black;
+}
+.breadcrumb .active a {
+  color: #37474f;
+} /* Material Blue Grey 800 */
+.breadcrumb .active a:hover {
+  color: @link-color-hover;
+} /* Material Blue Grey 900 */
+.breadcrumb > li + li::before {
   font-weight: 900;
   color: #fff;
 }
 
 /* --- Cart --- */
-#cartSummary strong { font-weight: inherit; }
+#cartSummary strong {
+  font-weight: inherit;
+}
 
 /* --- Channels --- */
-.channel-title { margin-top: 1rem; }
+.channel-title {
+  margin-top: 1rem;
+}
 .channel,
-.channel-title.no-results { margin-bottom: 2rem; }
+.channel-title.no-results {
+  margin-bottom: 2rem;
+}
 
 /* --- MyResearch --- */
-.myresearch-menu a:hover { background-color: @white; }
+.myresearch-menu a:hover {
+  background-color: @white;
+}
 .myresearch-menu a.active:hover {
   color: @white;
   background-color: @brand-primary;
@@ -177,18 +217,34 @@ a:hover .login-dropdown-caret {
   margin-top: 1rem;
   margin-right: auto;
 }
-.info-col { font-size: @reduced-font-size; }
+.info-col {
+  font-size: @reduced-font-size;
+}
 .info-col h3 {
   margin-top: 0;
   font-weight: 500;
 }
-.record .sidebar { margin-top: 1rem; }
-.comment-list { margin-top: .5rem; }
-.comment { margin-bottom: .5rem; }
-.comment .delete { font-size: @reduced-font-size; }
-.comment-form .btn-primary { margin-top: .25rem; }
-.tagList { line-height: 2rem; }
-.tagList .tag .fa-close { margin: 0; }
+.record .sidebar {
+  margin-top: 1rem;
+}
+.comment-list {
+  margin-top: 0.5rem;
+}
+.comment {
+  margin-bottom: 0.5rem;
+}
+.comment .delete {
+  font-size: @reduced-font-size;
+}
+.comment-form .btn-primary {
+  margin-top: 0.25rem;
+}
+.tagList {
+  line-height: 2rem;
+}
+.tagList .tag .fa-close {
+  margin: 0;
+}
 
 /* --- Sidebar --- */
 .sidebar {
@@ -198,7 +254,12 @@ a:hover .login-dropdown-caret {
   font-size: @reduced-font-size;
   background-color: @light-gray;
 
-  h1,h2,h3,h4 { margin-top: 0; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
 
   .facet-group {
     background-color: @sidebar-item-bg;
@@ -216,7 +277,9 @@ a:hover .login-dropdown-caret {
   }
 
   a.facet:hover,
-  .facet.checkbox:hover { background-color: @sidebar-item-hover-bg; }
+  .facet.checkbox:hover {
+    background-color: @sidebar-item-hover-bg;
+  }
 
   .facet.active,
   .facet.active:hover,
@@ -239,7 +302,8 @@ a:hover .login-dropdown-caret {
     margin-top: 5px;
   }
 
-  .more-btn, .less-btn {
+  .more-btn,
+  .less-btn {
     border: 0;
     padding: 0;
   }
@@ -248,24 +312,32 @@ a:hover .login-dropdown-caret {
 .facet .badge {
   flex-shrink: 0;
   max-height: 19px;
-  line-height: .8;
+  line-height: 0.8;
   background-color: @sidebar-item-badge;
 }
 
 .jstree-facet {
-  .main .fa-check { margin-top: 3px; }
-  .jstree-icon::before { margin-top: 2px; }
+  .main .fa-check {
+    margin-top: 3px;
+  }
+  .jstree-icon::before {
+    margin-top: 2px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar .facet {
     flex-flow: wrap;
 
-    .text { width: 100%; }
+    .text {
+      width: 100%;
+    }
     .badge {
       flex-grow: 1;
       order: 1;
     }
-    .exclude { order: 2; }
+    .exclude {
+      order: 2;
+    }
   }
 }
