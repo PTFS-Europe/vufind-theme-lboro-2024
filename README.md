@@ -57,3 +57,12 @@ gulp less
 ## if you want to follow along
 gulp less-watch
 ```
+
+## Troubleshooting
+**I'm getting `zsh: command not found: gulp`. What do I do!?**
+
+You might need to install `gulp` globally with:
+
+```
+npm install -g gulp
+```
