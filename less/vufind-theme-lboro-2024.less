@@ -12,10 +12,6 @@ header {
   }
 
   .navbar-brand {
-    height: 51px;
-    margin-bottom: 1.875rem;
-    margin-top: 1.875rem;
-    width: 198px;
     .background-image("logos/lboro.svg");
     &.lang-ar {
       .background-image("logos/lboro.svg");
@@ -23,11 +19,18 @@ header {
   }
 }
 
+.banner .navbar-brand {
+  width: 198px;
+  height: 51px;
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
+}
+
 @media(min-width:768px) {
-  header {
-    .navbar-brand {
-      height: 51px;
-      width: 198px;
-    }
+  .banner .navbar-brand {
+    width: 198px;
+    height: 51px;
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
   }
 }
