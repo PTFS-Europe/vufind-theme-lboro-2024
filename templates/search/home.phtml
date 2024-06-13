@@ -21,11 +21,16 @@ $this->layout()->breadcrumbs = false;
     <?= $this->slot('search-home-hero')->end() ?>
 </div>
 <div class="homeContent">
-    <h3>Using Library Catalogue Plus</h3>
+    <h2>Using Library Catalogue Plus</h2>
     <p>Choose the correct search tab for you:</p>
-    <ul><strong>Catalogue</strong> for books, journal titles, DVDs and other material held by the Library and all items from the Loughborough University Research Repository.</ul>
-    <ul><strong>Articles Plus</strong> for details and access to <a href="https://internal.lboro.ac.uk/info/library/uniwide/primocentral/">online full-text journal articles and conference papers</a> accessible at Loughborough University.</ul>
+    <ul>
+        <li><strong>Catalogue</strong> for books, journal titles, DVDs and other material held by the Library and all items from the Loughborough University Research Repository.</li>
+        <li><strong>Articles Plus</strong> for details and access to <a href="https://internal.lboro.ac.uk/info/library/uniwide/primocentral/">online full-text journal articles and conference papers</a> accessible at Loughborough University.</li>
+    </ul>
     <p>Login to manage your Library account, including renewing loans.</p>
 </div>
+
+
+<hr />
 
 <?= implode('', array_map([$this, 'contentBlock'], $blocks ?? [])) ?>
