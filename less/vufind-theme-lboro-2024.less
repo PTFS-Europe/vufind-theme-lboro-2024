@@ -48,7 +48,8 @@ header {
       a {
         background-color: @brand-primary;
 
-        &:hover, &:focus,
+        &:hover,
+        &:focus,
         &:active {
           color: @black;
           background-color: @header-light;
@@ -70,7 +71,7 @@ header {
 
   .chin-title {
     display: inline-flex;
-    gap: .25rem;
+    gap: 0.25rem;
     vertical-align: middle;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -79,7 +80,8 @@ header {
     font-weight: 400;
     text-decoration: none;
 
-    &:hover, &:focus,
+    &:hover,
+    &:focus,
     &:active {
       background-color: @header-light;
       color: @black;
@@ -101,7 +103,7 @@ header {
     background-color: darken(@brand-primary, 10%);
   }
 
-  // 
+  //
   .searchbox {
     max-width: 1180px;
     margin: 0 auto;
@@ -114,10 +116,34 @@ header {
 .breadcrumbs {
   .breadcrumb {
     color: lighten(@black, 10%);
+
+    a {
+      color: lighten(@black, 10%);
+      text-decoration: underline;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: lighten(@black, 20%);
+        text-decoration: none;
+      }
+    }
   }
 
   .breadcrumb .active {
     color: @black;
+
+    a {
+      color: lighten(@black, 10%);
+      text-decoration: underline;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: lighten(@black, 20%);
+        text-decoration: none;
+      }
+    }
   }
 }
 
