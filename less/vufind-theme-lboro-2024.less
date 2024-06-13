@@ -47,6 +47,12 @@ header {
     .active {
       a {
         background-color: @brand-primary;
+
+        &:hover, &:focus,
+        &:active {
+          color: @black;
+          background-color: @header-light;
+        }
       }
     }
   }
