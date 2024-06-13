@@ -50,6 +50,15 @@ header {
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 400;
+    text-decoration: none;
+
+    &:hover, &:focus,
+    &:active {
+      background-color: @header-light;
+      color: @black;
+      outline: 1px dotted @black;
+      text-decoration: none;
+    }
   }
 
   #siteOptions {
