@@ -53,21 +53,29 @@ header {
   }
 }
 
-// change searchHomeContent image
-.searchHomeContent {
-  .background-image("london.png");
-}
+// main
+.main {
+  padding-bottom: 1.5em;
 
-.searchHomeContent::after {
-  content: "Placeholder image of Loughborough London";
+  // change searchHomeContent image
+  .searchHomeContent {
+    .background-image("london.png");
+  }
+
+  .searchHomeContent::after {
+    content: "Placeholder image of Loughborough London";
+  }
 }
 
 // footer
 footer {
+  margin: 0;
+  padding: 0;
   width: 100% !important;
   color: @white;
   background-color: @footer-bg;
 
+  // match links with main site colours
   a {
     color: darken(@white, 40%);
     text-decoration: none;
@@ -80,11 +88,13 @@ footer {
     }
   }
 
+  // set the inner containers to 1180px max
   .footer-container {
     max-width: 1180px;
     margin: 0 auto;
   }
 
+  // for the legal text
   .footer-legal-wrapper {
     margin: 0;
     padding: 0;
