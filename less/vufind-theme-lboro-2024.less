@@ -6,6 +6,18 @@
 
 // add lboro logo
 header {
+  a {
+    color: @white;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken(@white, 40%);
+      text-decoration: none;
+    }
+  }
+
   // area where logo sits
   .banner {
     max-width: 1180px;
@@ -171,12 +183,12 @@ header {
   }
 
   .advanced-search-link {
-    color: @white;
+    text-decoration: underline;
 
     &:hover,
     &:focus,
     &:active {
-      color: darken(@white, 40%);
+      text-decoration: none;
     }
   }
 }
