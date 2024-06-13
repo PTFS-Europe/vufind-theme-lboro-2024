@@ -62,6 +62,23 @@ header {
   content: "Placeholder image of Loughborough London";
 }
 
+
+footer {
+  .footer-content {
+    color: darken(@white, 33%);
+    background-color: @footer-bg;
+
+    a {
+      color: @white;
+
+      &:hover, &:focus,
+      &:active {
+        color: lighten(@white, 33%);
+      }
+    }
+  }
+}
+
 //
 // desktop view
 @media(min-width:768px) {
