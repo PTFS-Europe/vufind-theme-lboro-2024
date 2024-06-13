@@ -109,6 +109,18 @@ header {
     margin: 0 auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+
+    .btn-link {
+      color: @white;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:hover {
+        color: darken(@white, 20%);
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -134,13 +146,13 @@ header {
     color: @black;
 
     a {
-      color: lighten(@black, 10%);
+      color: @black;
       text-decoration: underline;
 
       &:hover,
       &:focus,
       &:active {
-        color: lighten(@black, 20%);
+        color: lighten(@black, 10%);
         text-decoration: none;
       }
     }
