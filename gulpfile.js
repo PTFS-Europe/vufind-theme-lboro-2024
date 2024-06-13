@@ -18,6 +18,6 @@ gulp.task('less', compileLess);
 
 // watch less
 function watchLess() {
-    gulp.watch('less/**/compiled.less', compileLess);
+    gulp.watch('less/**/*.less', gulp.series('less'));
 }
 gulp.task('less-watch', watchLess);
