@@ -64,15 +64,17 @@ header {
 
 // footer
 footer {
-  color: darken(@white, 33%);
+  color: @white;
   background-color: @footer-bg;
 
   a {
-    color: @white;
+    color: darken(@white, 40%);
+    text-decoration: none;
 
     &:hover, &:focus,
     &:active {
-      color: lighten(@white, 33%);
+      color: @white;
+      text-decoration: none;
     }
   }
 }
