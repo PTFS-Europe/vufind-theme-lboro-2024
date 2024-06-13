@@ -22,7 +22,7 @@ header {
   }
 
   // mobile view - remove margins from logo
-  .container>.navbar-header {
+  .container > .navbar-header {
     margin: 0;
   }
 
@@ -42,13 +42,13 @@ header {
     // add fluff
     .container {
       padding-bottom: 1.3125rem;
-      padding-top: .75rem;
+      padding-top: 0.75rem;
     }
   }
 
   .chin-title {
-    font-size: 1.80rem;
-    line-height: 1.40;
+    font-size: 1.8rem;
+    line-height: 1.4;
     font-weight: 400;
   }
 }
@@ -64,6 +64,7 @@ header {
 
 // footer
 footer {
+  width: 100% !important;
   color: @white;
   background-color: @footer-bg;
 
@@ -71,25 +72,30 @@ footer {
     color: darken(@white, 40%);
     text-decoration: none;
 
-    &:hover, &:focus,
+    &:hover,
+    &:focus,
     &:active {
       color: @white;
       text-decoration: none;
     }
   }
 
+  .footer-container {
+    max-width: 1180px;
+  }
+
   .footer-legal {
+    max-width: 1180px;
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
-    font-size: 0.90em;
+    font-size: 0.9em;
     color: darken(@white, 40%);
   }
 }
 
-
 //
 // desktop view
-@media(min-width:768px) {
+@media (min-width: 768px) {
   header {
     .container.navbar {
       padding: 0;
