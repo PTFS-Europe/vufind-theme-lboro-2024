@@ -222,15 +222,29 @@ footer {
   .footer-container {
     max-width: 1180px;
     margin: 0 auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-top: 4rem 1.25rem;
+    font-family: din-2014, sans-serif;
+
+    h2 {
+      font-size: 1.265;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+      }
+    }
   }
 
   // for the legal text
   .footer-legal-wrapper {
     margin: 0;
     padding: 0;
-    background-color: #4c560a;
+    background-color: #191d1f;
   }
 
   .footer-legal {
@@ -240,10 +254,13 @@ footer {
     padding-bottom: 1.875rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    font-family: din-2014, sans-serif;
     font-size: 0.9em;
     color: darken(@white, 40%);
   }
 }
+
+
 
 //
 // desktop view
@@ -311,6 +328,8 @@ footer {
 }
 
 
+
+//
 // Wider view
 @media (min-width: 1190px) {
   header {
