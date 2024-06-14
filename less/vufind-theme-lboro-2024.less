@@ -11,7 +11,7 @@ header {
   a {
     color: @white;
     text-decoration: underline;
-    transition: all 0.3s;
+    transition: all .3s;
 
     &:hover,
     &:focus,
@@ -165,7 +165,7 @@ header {
       text-underline-offset: 0.4rem;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: underline!important;
       }
     }
   }
@@ -173,6 +173,7 @@ header {
 
 // breadcrumbs
 .breadcrumbs {
+  background-color: darken(@brand-primary, 8%);
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -182,8 +183,7 @@ header {
     color: lighten(@black, 10%);
 
     a {
-      color: lighten(@black, 10%);
-      text-decoration: underline;
+      color: lighten(@brand-primary, 20%);
 
       &:hover,
       &:focus,
@@ -192,10 +192,15 @@ header {
         text-decoration: none;
       }
     }
+
+    >li+li::before {
+      content: ' > ';
+      color: @brand-primary;
+    }
   }
 
   .breadcrumb .active {
-    color: @black;
+    color: @white;
 
     a {
       color: @black;
