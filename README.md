@@ -62,7 +62,8 @@ gulp less-watch
 To update the code, simply run:
 ```
 cd /path/to/your/vufind/clone/themes/vufind-theme-lboro-2024
-git pull --rebase --interactive
+git fetch ## for the paranoid
+git rebase -i
 ```
 
 This should fetch the latest changes
