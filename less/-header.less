@@ -1,0 +1,183 @@
+// Header styles
+
+
+// add lboro logo
+header {
+  a {
+    color: @white;
+    text-decoration: underline;
+    transition: all .3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken(@white, 40%);
+      text-decoration: none;
+    }
+  }
+
+  // area where logo sits
+  .banner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .navbar-brand {
+    .background-image("logos/lboro.svg");
+    &.lang-ar {
+      .background-image("logos/lboro.svg");
+    }
+  }
+
+  // mobile view - remove margins from logo
+  .container > .navbar-header {
+    margin: 0;
+
+    .navbar-toggle {
+      margin: 1rem 0 0;
+    }
+  }
+
+  // set logo size
+  .banner .navbar-brand {
+    width: 150px;
+    height: 38px;
+    margin-bottom: 1.25rem;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  // language menu -- add white bg in mobile view
+  .dropdown-menu {
+    li {
+      a {
+        background-color: @white;
+      }
+    }
+
+    .active {
+      a {
+        background-color: @brand-primary;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: @black;
+          background-color: @header-light;
+        }
+      }
+    }
+  }
+
+  // setup chin
+  .chin {
+    background-color: @brand-primary;
+
+    // add fluff
+    .container {
+      padding: 1rem 2rem;
+    }
+  }
+
+  .chin-title {
+    font-family: din-2014, sans-serif;
+    display: inline-flex;
+    gap: 0.25rem;
+    vertical-align: middle;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.4;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      //background-color: @header-light;
+      //outline: 1px dotted @black;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  // mobile view -- hide chin items
+  #siteOptions {
+    display: none;
+  }
+}
+
+
+
+// desktop view
+@media (min-width: 768px) {
+  header {
+    .nav a {
+      font-size: 1.125rem;
+      font-family: din-2014, sans-serif;
+      font-weight: 400;
+      transition: all 0.4s;
+      text-underline-offset: 0.5rem;
+
+      &:hover {
+        color: #ffffff!important;
+        background-color: transparent!important;
+        outline: none 0!important;
+        text-decoration: underline;
+      }
+    }
+
+    .container.navbar {
+      padding: 0;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .banner .navbar-brand {
+      width: 198px;
+      height: 51px;
+      margin-bottom: 1.875rem;
+      margin-top: 1.875rem;
+      padding: 0;
+    }
+
+    .banner .navbar-right {
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+    }
+
+    // chin options
+    #siteOptions {
+      display: block;
+    }
+
+    .chin .container {
+      padding: 1rem 0;
+
+      .chin-title {
+        font-size: 1.85rem;
+      }
+    }
+  }
+}
+
+
+
+
+//
+// Wider view
+@media (min-width: 1190px) {
+  header {
+    .container.navbar {
+      padding: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+
