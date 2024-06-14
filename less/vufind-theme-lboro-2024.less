@@ -140,8 +140,19 @@ header {
       }
     }
 
-    .form-control {
+    .btn-primary {
+      color: #ffffff;
+      background-color: @brand-primary;
+    }
+
+    .form-control,
+    .btn,
+    .search-filter-toggle {
       border-radius: 0!important;
+    }
+
+    .form-control:focus {
+      border-bottom: 3px solid @brand-primary;
     }
   }
 }
