@@ -58,6 +58,15 @@ gulp less
 gulp less-watch
 ```
 
+## Updating the code
+To update the code, simply run:
+```
+cd /path/to/your/vufind/clone/themes/vufind-theme-lboro-2024
+git pull --rebase --interactive
+```
+
+This should fetch the latest changes
+
 ## Troubleshooting
 **I'm getting `zsh: command not found: gulp`. What do I do!?**
 
