@@ -129,6 +129,14 @@ header {
     margin: 0 auto;
     padding: 1rem;
 
+    #searchForm .nav-tabs {
+      position: relative;
+    }
+
+    .searchForm-query {
+      display: block;
+    }
+
     .btn-link {
       color: @white;
       text-decoration: none;
@@ -196,7 +204,7 @@ header {
 
     >li+li::before {
       content: ' > ';
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.3);
       font-weight: 300;
     }
   }
@@ -322,7 +330,7 @@ footer {
       font-family: din-2014, sans-serif;
       font-weight: 400;
       transition: all 0.4s;
-      text-underline-offset: 0.4rem;
+      text-underline-offset: 0.5rem;
 
       &:hover {
         color: #ffffff!important;
