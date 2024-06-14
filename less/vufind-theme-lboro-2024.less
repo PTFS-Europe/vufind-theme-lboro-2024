@@ -11,6 +11,7 @@ header {
   a {
     color: @white;
     text-decoration: underline;
+    transition: all 0.3s;
 
     &:hover,
     &:focus,
@@ -143,6 +144,11 @@ header {
     .btn-primary {
       color: #ffffff;
       background-color: @brand-primary;
+
+      &:hover {
+        background-color: #361163;
+        border: solid 1px #361163;
+      }
     }
 
     .form-control,
@@ -153,6 +159,14 @@ header {
 
     .form-control:focus {
       border-bottom: 3px solid #B1BE2D;
+    }
+
+    .advanced-search-link {
+      text-underline-offset: 0.4rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
