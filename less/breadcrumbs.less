@@ -1,0 +1,49 @@
+// Breadcrumb styles
+
+
+// breadcrumbs
+.breadcrumbs {
+  background-color: darken(@brand-primary, 5%);
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .breadcrumb {
+    color: lighten(@black, 10%);
+
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: @white;
+        text-decoration: none;
+      }
+    }
+
+    >li+li::before {
+      content: ' > ';
+      color: rgba(255, 255, 255, 0.3);
+      font-weight: 300;
+    }
+  }
+
+  .breadcrumb .active {
+    color: @white;
+  
+    a {
+      color: @white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: @white;
+        text-decoration: none;
+      }
+    }
+  }
+}

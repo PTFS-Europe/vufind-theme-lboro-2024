@@ -1,0 +1,99 @@
+// Footer styles
+
+
+// footer
+footer {
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+  width: 100% !important;
+  color: @white;
+  background-color: @footer-bg;
+
+  // match links with main site colours
+  a {
+    color: darken(@white, 40%);
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @white;
+      text-decoration: none;
+    }
+  }
+
+  // set the inner containers to 1180px max
+  .footer-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    font-family: din-2014, sans-serif;
+
+    .footer-column {
+      padding-left: 2rem;
+    }
+
+    h2 {
+      font-size: 1.265rem;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        padding-bottom: 0.25rem;
+      }
+    }
+  }
+
+  // for the legal text
+  .footer-legal-wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: #191d1f;
+  }
+
+  .footer-legal {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: din-2014, sans-serif;
+    font-size: 0.9em;
+    color: darken(@white, 40%);
+  }
+}
+
+
+// desktop view
+@media (min-width: 768px) {
+  footer {
+    .footer-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .footer-legal {
+      padding-left: 2rem;
+      padding-right: 0;
+    }
+  }
+}
+
+//
+// Wider view
+@media (min-width: 1190px) {
+  .footer-column {
+    padding-left: 0;
+  }
+
+  .footer-legal {
+    padding-right: 0;
+  }
+}

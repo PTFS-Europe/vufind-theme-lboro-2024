@@ -1,1 +1,73 @@
 // for search pages
+
+
+// search area on non-home pages
+.search {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3b444a;
+}
+
+//
+.searchbox,
+.searchHomeContent {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  #searchForm {
+    padding: 0;
+    .nav-tabs {
+      position: relative;
+    }
+  }
+
+  .searchForm-query {
+    display: block;
+
+    .searchForm_lookfor::placeholder {
+      content: 'Search';
+    }
+  }
+
+  .btn-link {
+    color: @white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:hover {
+      color: darken(@white, 40%);
+      text-decoration: none;
+    }
+  }
+
+  .btn-primary {
+    color: #ffffff;
+    background-color: @brand-primary;
+
+    &:hover {
+      background-color: #361163;
+      border: solid 1px #361163;
+    }
+  }
+
+  .form-control,
+  .btn,
+  .search-filter-toggle {
+    border-radius: 0!important;
+  }
+
+  .form-control:focus {
+    border-bottom: 3px solid #B1BE2D;
+  }
+
+  .advanced-search-link {
+    text-underline-offset: 0.4rem;
+
+    &:hover {
+      text-decoration: underline!important;
+    }
+  }
+}
