@@ -39,6 +39,10 @@ header {
   // mobile view - remove margins from logo
   .container > .navbar-header {
     margin: 0;
+
+    .navbar-toggle {
+      margin: 1rem 0 0;
+    }
   }
 
   // set logo size
@@ -115,15 +119,14 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: darken(@brand-primary, 10%);
+    background-color: #3b444a;
   }
 
   //
   .searchbox {
     max-width: 1180px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1rem;
 
     .btn-link {
       color: @white;
@@ -135,6 +138,10 @@ header {
         color: darken(@white, 40%);
         text-decoration: none;
       }
+    }
+
+    .form-control {
+      border-radius: 0!important;
     }
   }
 }
