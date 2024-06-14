@@ -183,7 +183,8 @@ header {
     color: lighten(@black, 10%);
 
     a {
-      color: lighten(@brand-primary, 20%);
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
 
       &:hover,
       &:focus,
@@ -195,21 +196,19 @@ header {
 
     >li+li::before {
       content: ' > ';
-      color: @brand-primary;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 300;
     }
   }
 
   .breadcrumb .active {
-    color: @white;
-
     a {
-      color: @black;
-      text-decoration: underline;
+      color: @white;
 
       &:hover,
       &:focus,
       &:active {
-        color: lighten(@black, 10%);
+        color: @white;
         text-decoration: none;
       }
     }
