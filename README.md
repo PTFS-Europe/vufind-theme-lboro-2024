@@ -67,6 +67,15 @@ git pull --rebase --interactive
 
 This should fetch the latest changes
 
+## Pushing your changes
+Once you've made some changes, and want to see the changes, you'll want to push the changes to the server:
+
+```
+cd /path/to/your/vufind/clone/themes/vufind-theme-lboro-2024
+git pull --rebase --interactive ## to make sure nobody else has made changes
+git add * ; git commit -m "A message for the commit" ; git push
+```
+
 ## Troubleshooting
 **I'm getting `zsh: command not found: gulp`. What do I do!?**
 
