@@ -52,9 +52,13 @@ header {
 
   // language menu -- add white bg in mobile view
   .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+  
     li {
       a {
         background-color: #191d1f;
+        color: @white;
         text-underline-offset: .3rem;
 
         &:hover,
@@ -141,8 +145,6 @@ header {
       text-underline-offset: 0.5rem;
 
       &:hover {
-        color: #ffffff!important;
-        background-color: transparent!important;
         outline: none 0!important;
         text-decoration: underline;
       }
