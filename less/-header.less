@@ -52,12 +52,19 @@ header {
 
   .navbar-right {
     li a {
-      background-color: transparent!important;
+      background-color: transparent;
     }
 
     .dropdown-toggle {
       padding-top: 10px;
       padding-bottom: 10px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        color: @white;
+      }
     }
   }
 
