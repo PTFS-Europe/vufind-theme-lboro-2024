@@ -54,7 +54,15 @@ header {
   .dropdown-menu {
     li {
       a {
-        background-color: @white;
+        background-color: #191d1f;
+        text-underline-offset: .3rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: @white;
+          background-color: #3b444a;
+        }
       }
     }
 
@@ -65,10 +73,19 @@ header {
         &:hover,
         &:focus,
         &:active {
-          color: @black;
-          background-color: @header-light;
+          color: @white;
+          background-color: #3b444a;
         }
       }
+    }
+  }
+
+  // language dropdown
+  .navbar-nav button.dropdown-toggle {
+    font-size: 1.125rem;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 
