@@ -10,5 +10,25 @@
 
   .result-formats .format {
     background-color: @lu-asphalt!important;
+    border-radius: 0!important;
+  }
+
+  .pagination>.active>a, .pagination>.active>span {
+    border-radius: 0!important;
+  }
+
+  .btn,
+  .search-filter-toggle {
+    border-radius: 0;
+    background-color: @lu-cedar;
+
+    &:hover {
+      background-color: @lu-asphalt;
+    }
+
+    &:active,
+    &:focus {
+      background-color: @lu-african-violet;
+    }
   }
 }
