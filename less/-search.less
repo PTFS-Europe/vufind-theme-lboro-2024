@@ -84,8 +84,11 @@
   .sidebar {
     padding-bottom: 0.1rem;
     
-    a.facet:hover {
-      background-color: #b4ba8f;
+    a.facet,
+    a.facet.active {
+      &:hover {
+        background-color: #ecf1cf;
+      }
     }
   }
 }
