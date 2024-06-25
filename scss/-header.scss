@@ -28,7 +28,7 @@ header {
   }
 
   .navbar-brand {
-    @include background-image("logos/lboro.svg");
+    background-image: url("logos/lboro.svg");
     &.lang-ar {
       @include background-image("logos/lboro.svg");
     }
