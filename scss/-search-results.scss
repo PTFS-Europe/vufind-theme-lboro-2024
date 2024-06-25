@@ -9,7 +9,7 @@
   }
 
   .result-formats .format {
-    background-color: @lu-asphalt!important;
+    background-color: $lu-asphalt!important;
     border-radius: 0!important;
   }
 
@@ -17,18 +17,18 @@
 
   .alert-info, .alert {
     background-image: none!important;
-    background-color: @lu-light-gray;
+    background-color: $lu-light-gray;
     border-radius: 0!important;
     padding: 1rem!important;
 
     a {
-      color: @lu-african-violet;
+      color: $lu-african-violet;
       text-underline-offset: .3rem;
 
       &:hover,
       &:active,
       &:focus {
-        color: @black;
+        color: $black;
         text-decoration: none;
       }
     }

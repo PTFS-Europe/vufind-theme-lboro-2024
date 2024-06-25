@@ -3,7 +3,7 @@
 
 // breadcrumbs
 .breadcrumbs {
-  background-color: darken(@brand-primary, 5%);
+  background-color: darken($brand-primary, 5%);
 
   .container {
     width: 100%;
@@ -20,7 +20,7 @@
       &:hover,
       &:focus,
       &:active {
-        color: @white;
+        color: $white;
         text-decoration: none;
       }
     }
@@ -33,15 +33,15 @@
   }
 
   .breadcrumb .active {
-    color: @white;
+    color: $white;
   
     a {
-      color: @white;
+      color: $white;
 
       &:hover,
       &:focus,
       &:active {
-        color: @white;
+        color: $white;
         text-decoration: none;
       }
     }

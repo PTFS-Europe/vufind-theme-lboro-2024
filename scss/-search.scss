@@ -6,7 +6,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: @lu-asphalt;
+  background-color: $lu-asphalt;
 }
 
 //
@@ -35,22 +35,22 @@
   }
 
   .btn-link {
-    color: @white;
+    color: $white;
     text-decoration: none;
 
     &:hover,
     &:focus,
     &:hover {
-      color: darken(@white, 40%);
+      color: darken($white, 40%);
       text-decoration: none;
     }
   }
 
   .advanced-search-link {
-    color: @white;
+    color: $white;
 
     &:hover {
-      color: @white;
+      color: $white;
     }
   }
 
@@ -88,13 +88,13 @@ header {
 .btn-default,
 .btn-primary,
 .clear-btn {
-  color: @white;
-  background-color: @brand-primary;
+  color: $white;
+  background-color: $brand-primary;
   border: none 0;
 
   &:hover {
-    color: @white;
-    background-color: @lu-african-violet;
+    color: $white;
+    background-color: $lu-african-violet;
     border: none 0;
   }
 }
@@ -111,7 +111,7 @@ header {
 
       &.active {
         &:hover {
-          background-color: @lu-african-violet;
+          background-color: $lu-african-violet;
         }
       }
     }
@@ -138,17 +138,17 @@ a.toolbar-btn,
   margin-top: 0.5rem!important;
   border-radius: 0!important;
   border: none 0!important;
-  background-color: @lu-cedar!important;
-  color: @white!important;
+  background-color: $lu-cedar!important;
+  color: $white!important;
 
   &:hover {
-    background-color: @lu-asphalt!important;
+    background-color: $lu-asphalt!important;
     border: none 0!important;
   }
 
   &:active,
   &:focus {
-    background-color: @lu-african-violet!important;
+    background-color: $lu-african-violet!important;
     border: none 0!important;
   }
 }

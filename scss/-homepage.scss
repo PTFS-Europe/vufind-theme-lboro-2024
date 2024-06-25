@@ -7,7 +7,7 @@
   }
 
   .searchHomeContent {
-    background-color: @lu-asphalt;
+    background-color: $lu-asphalt;
     background-image: url('/themes/vufind-theme-lboro-2024/images/as-232244890-abstract-mobile.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   }
 
   .search-home-facets {
-    background-color: @lu-light-gray;
+    background-color: $lu-light-gray;
     padding: 2rem 1rem 1rem;
 
     .home-facet {

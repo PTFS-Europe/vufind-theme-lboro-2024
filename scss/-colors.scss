@@ -1,0 +1,57 @@
+@import "vendor/tachyons-colors.scss"; // Import colors from the tachyons library
+
+$brand-primary: #6f7e0d;
+$brand-secondary: #361163;
+
+$lu-cedar: $brand-primary;
+$lu-african-violet: $brand-secondary;
+$lu-asphalt: #3b444a;
+$lu-light-gray: #eeeeee;
+
+$header-bg: #000;
+$header-light: #a6a6a6;
+
+$footer-bg: #000;
+$footer-light: #a6a6a6;
+
+$action-color: $brand-primary;
+$action-hover-bg: $white;
+$action-hover-color: $black;
+$passive-icon-color: $gray;
+$highlighter-color: lighten($brand-primary, 25%);
+
+$search-row-bg: $white;
+$search-row-bg-alt: $light-gray;
+$search-row-bg-hover: $lightest-blue;
+$search-row-selected-bg: $brand-primary;
+$search-row-selected-color: $white;
+
+$sidebar-title-bg: $white;
+$sidebar-title-color: $near-black;
+$sidebar-title-icon-color: $light-silver;
+$sidebar-item-bg: $white;
+$sidebar-item-color: $black;
+$sidebar-item-hover-bg: $lightest-blue;
+$sidebar-item-badge: $gray;
+$sidebar-active-bg: $brand-secondary;
+$sidebar-active-color: $white;
+
+/* Bootstrap variable changes */
+
+$link-color: $brand-primary; /* University - Cedar AA */
+$link-color-hover: #361163; /* University - African Violet */
+
+$input-border:              $light-silver;
+$input-color:               $dark-gray;
+$btn-default-bg:            $light-gray;
+$btn-default-color:         $near-black;
+$btn-primary-bg:            $action-color;
+
+$input-border-radius:         .25rem;
+
+$autocomplete-hover-bg:     $header-light;
+$dropdown-link-hover-bg:    $header-light;
+$dropdown-link-hover-color: $black;
+$list-group-active-bg:      $brand-secondary;
+$table-bg-hover:            $header-light;
+$pagination-color:          $header-bg;

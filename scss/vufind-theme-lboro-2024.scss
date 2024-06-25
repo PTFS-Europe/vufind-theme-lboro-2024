@@ -1,4 +1,4 @@
-@import "../../sandal/less/sandal";
+@import "../../sandal5/scss/sandal";
 @import "-breadcrumbs";
 @import "-colors";
 @import "-content";
@@ -14,9 +14,9 @@
 @import url("https://use.typekit.net/ner1ngt.css");
 
 a {
-  color: @link-color;
+  color: $link-color;
 
   &:hover {
-    color: @link-color-hover;
+    color: $link-color-hover;
   }
 }

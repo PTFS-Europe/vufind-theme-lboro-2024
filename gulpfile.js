@@ -1,23 +1,24 @@
-const gulp               = require('gulp');
-const less               = require('gulp-less');
-const lessPluginCleanCss = require('less-plugin-clean-css');
-const cleanCSSPlugin     = new lessPluginCleanCss({advanced: true});
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 
 
-// build less
-function compileLess() {
-  return gulp.src('less/**/compiled.less') // Path to your LESS files
-    .pipe(less({
-      plugins: [cleanCSSPlugin]
+// build sass
+function compileSass() {
+  return gulp.src('scss/**/compiled.scss') // Path to your SASS files
+    .pipe(sass({
+      outputStyle: 'compressed',
+      precision: 3,
+      errLogToConsole: true,
+      includePaths: ['node_modules/']
     }).on('error', console.error))
     .pipe(gulp.dest('css')); // Output directory for CSS files
 }
-gulp.task('compile-less', compileLess);
-gulp.task('less', compileLess);
+gulp.task('compile-sass', compileSass);
+gulp.task('sass', compileSass);
 
 
-// watch less
-function watchLess() {
-    gulp.watch('less/**/*.less', gulp.series('less'));
+// watch sass
+function watchSass() {
+  gulp.watch('scss/**/*.scss', gulp.series('sass'));
 }
-gulp.task('less-watch', watchLess);
+gulp.task('sass-watch', watchSass);

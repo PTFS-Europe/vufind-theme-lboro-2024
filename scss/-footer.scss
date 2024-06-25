@@ -7,18 +7,18 @@ footer {
   margin-top: 1.5rem;
   padding: 0;
   width: 100% !important;
-  color: @white;
-  background-color: @footer-bg;
+  color: $white;
+  background-color: $footer-bg;
 
   // match links with main site colours
   a {
-    color: darken(@white, 30%); 
+    color: darken($white, 30%); 
     text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
-      color: @white;
+      color: $white;
       text-decoration: none;
     }
   }
@@ -68,7 +68,7 @@ footer {
     padding-right: 2rem;
     font-family: din-2014, sans-serif;
     font-size: 0.9em;
-    color: darken(@white, 30%);
+    color: darken($white, 30%);
   }
 }
 
