@@ -18,7 +18,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    border-radius: 0 0 2rem 2rem;
 
     .btn-link {
       text-shadow: none!important;
@@ -72,6 +71,12 @@
 
       .home-facet {
         width: 33.33%;
+
+        h2 {
+          font-size: 2rem!important;
+          font-family: din-2014, sans-serif;
+          font-weight: 600;
+        }
       }
     }
 
@@ -82,6 +87,7 @@
       padding-top: 3rem;
       padding-left: 4rem;
       padding-right: 4rem;
+      border-radius: 0 0 2rem 2rem;
       //margin-left: -5rem;
       //margin-right: -5rem;
     }
@@ -89,9 +95,10 @@
     .homeContent {
       padding: 2rem 4rem;
   
-      h2 {
+      & > h2 {
         font-family: din-2014, sans-serif;
         font-weight: 600;
+        font-size: 2rem!important;
       }
     }
   }
