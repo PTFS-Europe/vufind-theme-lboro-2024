@@ -28,7 +28,7 @@ header {
   }
 
   .navbar-brand {
-    background-image: url("logos/lboro.svg");
+    background-image: url("/themes/vufind-theme-lboro-2024/images/logos/lboro.svg");
     &.lang-ar {
       @include background-image("logos/lboro.svg");
     }
