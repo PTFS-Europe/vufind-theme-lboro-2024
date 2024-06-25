@@ -1,6 +1,17 @@
 // Homepage styles
 
 
+.template-name-home {
+  .main .container {
+    padding-top: 0;
+
+    hr {
+      display: none!important;
+    }
+  }
+}
+
+
 .main {
   .container {
     padding: 2rem 1rem;
@@ -13,6 +24,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
+    .btn-link {
+      text-shadow: none!important;
+    }
   }
 
   .searchHomeContent::after {
@@ -54,33 +69,47 @@
       }
     }
 
-    .search-home-facets {
-      padding: 3rem 4rem;
-      //margin-left: -5rem;
-      //margin-right: -5rem;
-
-      .home-facet {
-        width: 33.33%;
-      }
-    }
+    
 
     .searchHomeContent {
       background-image: url('/themes/vufind-theme-lboro-2024/images/as-232244890-abstract.jpg');
-      min-height: 100px;
-      height: 40vh;
-      padding-top: calc(20vh - 50px);
+      min-height: 220px;
+      height: auto!important;
+      padding-top: 3rem;
       padding-left: 4rem;
       padding-right: 4rem;
+      border-radius: 0 0 2rem 2rem;
       //margin-left: -5rem;
       //margin-right: -5rem;
     }
 
     .homeContent {
-      padding: 2rem 4rem;
+      padding: 2rem 4rem 3rem;
+      max-width: 800px;
   
-      h2 {
+      & > h2 {
         font-family: din-2014, sans-serif;
         font-weight: 600;
+        font-size: 2rem!important;
+      }
+
+      
+    }
+
+    .search-home-facets {
+      padding: 3rem 4rem;
+      border-radius: 2rem;
+      //margin-left: -5rem;
+      //margin-right: -5rem;
+
+      .home-facet {
+        width: 33.33%;
+
+        h2 {
+          font-size: 1.5rem!important;
+          font-family: din-2014, sans-serif;
+          font-weight: 600;
+        }
       }
     }
   }
