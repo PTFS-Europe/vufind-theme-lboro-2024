@@ -162,6 +162,13 @@ header {
 
 // desktop view
 @media (min-width: 768px) {
+  .navbar-right {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    margin-right: -15px;
+    float: right!important;
+  }
+  
   header {
     .nav a {
       font-size: 1.125rem;
