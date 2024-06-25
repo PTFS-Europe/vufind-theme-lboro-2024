@@ -193,6 +193,16 @@ header {
     .banner .navbar-right {
       margin-top: 1.875rem;
       margin-bottom: 1.875rem;
+      margin-right: -15px;
+      float: right!important;
+
+      li {
+        a {
+          display: inline-flex;
+          gap: 0.25rem;
+          vertical-align: middle;
+        }
+      }
     }
 
     // chin options
