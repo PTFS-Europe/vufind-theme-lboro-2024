@@ -8,7 +8,7 @@ The best way to achieve this is to clone a copy of VuFind. To do this, you can r
 cd /path/to/your/preferred/folder
 git clone https://github.com/vufind-org/vufind.git ./vufind
 cd ./vufind
-git checkout -b release-9.1 --track origin/release-9.1 ## to get VuFind 9.1
+git checkout -b release-10.0 --track origin/release-10.0 ## to get VuFind 10.0
 ```
 
 Once you have a copy of the VuFind cloned locally, we can then add this repository as a submodule, under the themes directory:
@@ -25,7 +25,7 @@ cd /path/to/your/vufind/clone
 cd themes/vufind-theme-lboro-2024/
 git status
 > On branch main
-> Your branch is up to date with 'origin/main'.
+> Your branch is up to date with 'origin/dev/vufind-10.0'.
 > 
 > nothing to commit, working tree clean
 git remote -v
@@ -52,10 +52,10 @@ npm --include=dev install
 Lastly, you can run the following to build the css:
 ```
 ## if you want to build once
-gulp less
+gulp sass
 
 ## if you want to follow along
-gulp less-watch
+gulp sass-watch
 ```
 
 ## Updating the code
