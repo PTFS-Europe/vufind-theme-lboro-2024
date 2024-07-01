@@ -32,6 +32,7 @@ header {
 
     .navbar-toggler {
       float: right;
+      margin-top: 1.5rem;
     }
   }
 
@@ -80,6 +81,7 @@ header {
       line-height: 20px;
       font-size: 1.125rem;
       text-underline-offset: .3rem;
+      padding-left: 15px;
 
       &:hover,
       &:focus,
@@ -178,7 +180,7 @@ header {
   }
 
   .navbar-header {
-    width: initial;
+    width: initial!important;
   }
   
   header {
