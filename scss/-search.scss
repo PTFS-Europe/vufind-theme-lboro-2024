@@ -64,13 +64,13 @@
     border: none 0!important;
       border-bottom: 3px solid $white!important;
       outline: none 0;
-      box-shadow: none 0;
+      box-shadow: none 0!important;
 
     &:focus {
       border: none 0!important;
       border-bottom: 3px solid #B1BE2D!important;
       outline: none 0;
-      box-shadow: none 0;
+      box-shadow: none 0!important;
     }
 
   }
@@ -190,6 +190,10 @@ fieldset.range {
   .searchbox .searchForm-query,
   .template-name-home .searchForm-query {
     display: inline-block!important;
+  }
+
+  #searchForm_lookfor {
+    min-width: 350px;
   }
 
   #advSearchForm {

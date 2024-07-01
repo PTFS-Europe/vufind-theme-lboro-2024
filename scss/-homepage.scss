@@ -29,9 +29,12 @@
     background-attachment: fixed;
     background-size: cover;
 
-    .btn-link {
+    .btn-link,
+    .btn {
       text-shadow: none!important;
-      vertical-align: baseline;
+      vertical-align: bottom;
+      padding-top: 0.45rem;
+      padding-bottom: 0.45rem;
     }
 
     .alert-warning {
