@@ -8,6 +8,10 @@
     hr {
       display: none!important;
     }
+
+    &::before {
+      content: none;
+    }
   }
 }
 
