@@ -27,6 +27,14 @@ header {
     padding-right: 2rem;
   }
 
+  .navbar-header {
+    width: 100%;
+
+    .navbar-toggler {
+      float: right;
+    }
+  }
+
   .navbar-brand {
     background-image: url("/themes/vufind-theme-lboro-2024/images/logos/lboro.svg");
     &.lang-ar {
@@ -167,6 +175,10 @@ header {
     margin-bottom: 1.875rem;
     margin-right: -15px;
     float: right!important;
+  }
+
+  .navbar-header {
+    width: initial;
   }
   
   header {
