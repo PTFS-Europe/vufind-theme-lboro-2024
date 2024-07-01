@@ -28,8 +28,27 @@
     .btn-link {
       text-shadow: none!important;
     }
+
+    .alert-warning {
+      background-color: #B1BE2D;
+
+      a {
+        color: $lu-african-violet;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    #searchForm {
+      float: none!important;
+      margin-bottom: 2rem!important
+    }
   }
 
+
+  
   .searchHomeContent::after {
     display: none;
   }
