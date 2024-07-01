@@ -60,10 +60,19 @@
     border-radius: 0!important;
   }
 
-  .form-control:focus {
+  .form-control {
     border: none 0!important;
-    border-bottom: 3px solid #B1BE2D!important;
-    outline: none 0;
+      border-bottom: 3px solid $white!important;
+      outline: none 0;
+      box-shadow: none 0;
+
+    &:focus {
+      border: none 0!important;
+      border-bottom: 3px solid #B1BE2D!important;
+      outline: none 0;
+      box-shadow: none 0;
+    }
+
   }
 
   .advanced-search-link {
