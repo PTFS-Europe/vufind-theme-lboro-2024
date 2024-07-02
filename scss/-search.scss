@@ -199,7 +199,7 @@ fieldset.range {
   border: solid 1px $lu-cedar;
 
   &:focus {
-    border: solid 1px $lu-cedar;
+    border: solid 1px $lu-cedar!important;
   }
 }
 
