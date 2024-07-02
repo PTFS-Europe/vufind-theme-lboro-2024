@@ -130,6 +130,14 @@ header {
 .pagination {
   color: $lu-asphalt!important;
 
+  .page-link {
+    color: $lu-asphalt;
+
+    &:hover {
+      color: $lu-african-violet;
+    }
+  }
+
   li.page-next a {
     color: $lu-cedar;
   
