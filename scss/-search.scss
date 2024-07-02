@@ -198,7 +198,8 @@ fieldset.range {
   background-color: $lu-cedar;
   border: solid 1px $lu-cedar;
 
-  &:focus {
+  &:focus,
+  &:active {
     border: solid 1px $lu-cedar!important;
   }
 }
