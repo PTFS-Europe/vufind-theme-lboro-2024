@@ -138,7 +138,8 @@ header {
     }
   }
 
-  li.page-next a {
+  li.page-next a,
+  li.page-prev a {
     color: $lu-cedar;
   
     &:hover {
