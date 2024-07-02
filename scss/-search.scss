@@ -128,8 +128,8 @@ header {
 }
 
 .pagination {
-  color: $lu-asphalt;
-  
+  color: $lu-asphalt!important;
+
   li.page-next a {
     color: $lu-cedar;
   
