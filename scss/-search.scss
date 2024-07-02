@@ -127,6 +127,18 @@ header {
   }
 }
 
+.pagination {
+  color: $lu-asphalt;
+  
+  li.page-next a {
+    color: $lu-cedar;
+  
+    &:hover {
+      color: $lu-african-violet;
+    }
+  }
+} 
+
 #content,
 #advSearchForm {
   .sidebar {
