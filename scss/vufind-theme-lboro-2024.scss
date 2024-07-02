@@ -15,6 +15,7 @@
 
 a {
   color: $link-color;
+  text-underline-offset: .2rem;
 
   &:hover {
     color: $link-color-hover;
