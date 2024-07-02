@@ -4,6 +4,7 @@
 // search area on non-home pages
 .search {
   width: 100%;
+  max-width: initial;
   margin: 0;
   padding: 0;
   background-color: $lu-asphalt;
@@ -13,7 +14,7 @@
 .searchbox,
 .searchHomeContent {
   max-width: 1180px;
-  margin: 0 auto;
+  margin: 0 auto!important;
   padding: 1rem;
 
   #searchForm {
