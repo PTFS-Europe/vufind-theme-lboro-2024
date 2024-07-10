@@ -113,7 +113,7 @@ header {
     &:hover,
     &:active,
     &:focus {
-      background-color: lighten($lu-asphalt, 8%);
+      background-color: lighten($lu-asphalt, 12%);
       text-decoration: underline;
       color: $white;
     }
