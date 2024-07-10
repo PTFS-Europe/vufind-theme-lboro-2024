@@ -110,9 +110,12 @@ header {
       color: $white;
     }
 
-    &:hover {
-      background-color: #999999;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: lighten($lu-asphalt, 5%);
       text-decoration: underline;
+      color: $white;
     }
   }
 }
