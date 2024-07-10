@@ -129,7 +129,9 @@ header {
   background-color: $brand-primary;
   border: none 0;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: $white;
     background-color: $lu-african-violet;
     border: none 0;
