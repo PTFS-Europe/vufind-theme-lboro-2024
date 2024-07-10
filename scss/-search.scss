@@ -104,6 +104,11 @@ header {
   .btn-primary {
     text-underline-offset: 0.3rem;
     background-color: $brand-primary;
+    color: $white;
+
+    .icon--font {
+      color: $white;
+    }
 
     &:hover {
       background-color: #999999;
