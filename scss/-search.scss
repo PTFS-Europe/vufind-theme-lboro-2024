@@ -117,7 +117,7 @@ header {
     &:hover,
     &:active,
     &:focus {
-      background-color: lighten($lu-asphalt, 12%);
+      background-color: $lu-african-violet;
       text-decoration: underline;
       color: $white;
     }
