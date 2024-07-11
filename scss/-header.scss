@@ -146,25 +146,27 @@ header {
   }
 
   .chin-title {
-    font-family: din-2014, sans-serif;
-    display: inline-flex;
-    gap: 0.25rem;
-    vertical-align: middle;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    font-size: 1.5rem;
-    letter-spacing: 0.01rem;
-    line-height: 1.4;
-    font-weight: 600;
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-      //background-color: $header-light;
-      //outline: 1px dotted $black;
-      color: $white;
+    a {
+      font-family: din-2014, sans-serif;
+      display: inline-flex;
+      gap: 0.25rem;
+      vertical-align: middle;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.01rem;
+      line-height: 1.4;
+      font-weight: 600;
       text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        //background-color: $header-light;
+        //outline: 1px dotted $black;
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 
@@ -257,7 +259,9 @@ header {
         }
   
         .chin-title {
-          font-size: 1.85rem;
+          a {
+            font-size: 1.85rem;
+          }
         }
       }
     }
