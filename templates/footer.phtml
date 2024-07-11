@@ -4,8 +4,10 @@
             <?php $this->slot('footer-left')->start(); ?>
             <h2><?= $this->transEsc('footer_header_search_options') ?></h2>
             <ul>
-                <li><a href="<?= $this->url('search-history') ?>"><?= $this->transEsc('Search History') ?></a></li>
-                <li><a href="<?= $this->url('search-advanced') ?>"><?= $this->transEsc('Advanced Search') ?></a></li>
+                <li><a href="/Search/History"><?= $this->transEsc('Search History') ?></a></li>
+                <li><a href="/Search/Advanced"><?= $this->transEsc('Advanced Search') ?></a></li>
+                <li><a href="/Browse/Dewey"><?= $this->transEsc('Browse by call number') ?></a></li>
+                <li><a href="/Browse/Topic"><?= $this->transEsc('Browse by topic') ?></a></li>
             </ul>
             <?= $this->slot('footer-left')->end(); ?>
         </div>
@@ -13,11 +15,11 @@
             <?php $this->slot('footer-center')->start(); ?>
             <h2><?= $this->transEsc('footer_header_find_more') ?></h2>
             <ul>
-                <li><a href="<?= $this->url('browse-home') ?>"><?= $this->transEsc('Browse the Catalog') ?></a></li>
-                <li><a href="<?= $this->url('alphabrowse-home') ?>"><?= $this->transEsc('Browse Alphabetically') ?></a></li>
-                <li><a href="<?= $this->url('channels-home') ?>"><?= $this->transEsc('channel_explore') ?></a></li>
-                <li><a href="<?= $this->url('search-reserves') ?>"><?= $this->transEsc('Course Reserves') ?></a></li>
-                <li><a href="<?= $this->url('search-newitem') ?>"><?= $this->transEsc('New Items') ?></a></li>
+                <li><a href="https://www.lboro.ac.uk/services/library/databases/"><?= $this->transEsc('Databases A-Z') ?></a></li>
+                <li><a href="https://www.lboro.ac.uk/services/library/subject-guides/"><?= $this->transEsc('Subject guides') ?></a></li>
+                <li><a href="https://sfxeu10.hosted.exlibrisgroup.com/loughborough/journalsearch" target="_blank"><?= $this->transEsc('Ejournals A-Z') ?></a></li>
+                <li><a href="https://lboro.rl.talis.com/" target="_blank"><?= $this->transEsc('Reading lists') ?></a></li>
+                <li><a href="/Search/NewItem"><?= $this->transEsc('New Items') ?></a></li>
             </ul>
             <?= $this->slot('footer-center')->end(); ?>
         </div>
@@ -27,7 +29,7 @@
             <ul>
                 <li><a href="<?= $this->url('help-home') ?>?topic=search&amp;_=<?= time() ?>" data-lightbox class="help-link"><?= $this->transEsc('Search Tips') ?></a></li>
                 <li><a href="https://www.lboro.ac.uk/services/library/contact/"><?= $this->transEsc('Ask a Librarian') ?></a></li>
-                <li><a href="https://www.lboro.ac.uk/services/library/using/"><?= $this->transEsc('FAQs') ?></a></li>
+                <li><a href="https://www.lboro.ac.uk/services/library/topics/referencing-and-citations/"><?= $this->transEsc('Referencing') ?></a></li>
                 <?php if ($this->cookieConsent()->isEnabled()) : ?>
                     <li><a href="#" data-cc="show-preferencesModal" aria-haspopup="dialog"><?= $this->transEsc('Cookie Settings') ?></a></li>
                 <?php endif; ?>
