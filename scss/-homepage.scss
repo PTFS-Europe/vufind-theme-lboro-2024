@@ -52,6 +52,14 @@
       }
     }
 
+    .advanced-search-link {
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration-color: $white!important;
+      }
+    }
+
     #searchForm {
       float: none!important;
       margin-bottom: 2rem!important
