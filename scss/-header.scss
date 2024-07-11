@@ -146,6 +146,10 @@ header {
   }
 
   .chin-title {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
     a {
       font-family: din-2014, sans-serif;
       display: inline-flex;
