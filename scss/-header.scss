@@ -71,6 +71,7 @@ header {
       &:focus,
       &:active {
         background-color: transparent!important;
+        text-decoration-color: $white!important;
       }
     }
 
