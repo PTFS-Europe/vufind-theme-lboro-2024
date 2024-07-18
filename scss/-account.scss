@@ -2,9 +2,13 @@
 .myresearch-menu {
     a{
         &.active {
-            background-color: $brand-primary;
+            background-color: #ff6d00;
+            border-bottom: 1px solid #ff6d00;
             color: $white;
-            outline: pink;
+
+            &:hover {
+                background-color: #361163;
+            }
         }
     }
 }
