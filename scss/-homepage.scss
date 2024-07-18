@@ -167,6 +167,12 @@
 }
 
 // some global rules to avoid repetition
+a {
+  &:focus {
+    outline: 2px solid #4169e1!important;
+  }
+}
+
 .alert, .savedLists {
   border-radius: 0!important;
   padding: 1em!important;
