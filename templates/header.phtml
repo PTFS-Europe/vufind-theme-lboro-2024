@@ -94,10 +94,13 @@
 </div>
 <div class="chin">
     <div class="container">
-        <h1 class="chin-title"><a href="/">Library Catalogue Plus</a></h1>
+        <a class="chin-title" href="/">
+            <span class="chin-title-back-icon"><i class="fa-solid fa-arrow-left"></i></span>
+            <h1><?= $this->transEsc('Library Catalogue Plus') ?></h1>
+        </a>
         <ul class="nav navbar-nav navbar-right flip">
             <li id="siteOptions">
-                <a href="/">New search</a>
+                <a href="https://www.lboro.ac.uk/services/library/"><?= $this->transEsc('Library home') ?></a>
                 <a href="https://www.lboro.ac.uk/services/library/subject-guides/">Subject guides</a>
                 <a href="https://www.lboro.ac.uk/services/library/databases/">Databases</a>
                 <a href="https://www.lboro.ac.uk/services/library/topics/referencing-and-citations/">Referencing</a>
