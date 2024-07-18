@@ -166,11 +166,19 @@
   }
 }
 
+// some global rules to avoid repetition
 .alert, .savedLists {
   border-radius: 0!important;
   padding: 1em!important;
 }
 
+.badge, .label, .sidebar .format, .result .format {
+  border-radius: 0!important;
+}
+
+.form-control {
+  border-radius: 0!important;
+}
 
 
 // Wider view

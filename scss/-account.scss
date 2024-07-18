@@ -1,14 +1,14 @@
 // Account styles
 .myresearch-menu {
-    a{
-        &.active {
-            background-color: #ff6d00;
-            border-bottom: 1px solid #ff6d00;
-            color: $white;
-
-            &:hover {
-                background-color: #361163;
-            }
-        }
+  a{
+    &.active {
+      background-color: #ff6d00;
+      border-bottom: 1px solid #ff6d00;
+      color: $white;
+      
+      &:hover {
+        background-color: #361163;
+      }
     }
+  }
 }
