@@ -1,0 +1,10 @@
+// Account styles
+
+.myresearch-menu {
+    a {
+        &.active {
+            color: $white;
+            background-color: $brand-primary;
+        }
+    }
+}
