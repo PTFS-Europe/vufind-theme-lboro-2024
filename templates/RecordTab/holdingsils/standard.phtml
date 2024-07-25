@@ -6,7 +6,6 @@
     $availabilityStatus = $holding['availability'];
     $MyStatusDescription = $availabilityStatus->getStatusDescription();
   ?>
- <?php /*if (isset($holding['barcode']) && $holding['barcode'] != "" && $MyStatusDescription != "Withdrawn" && $MyStatusDescription != "Lost/Missing"): */?>
   <tr class="holding-row"<?=$this->schemaOrg()->getAttributes(['vocab' => 'http://schema.org/', 'typeof' => 'Offer'])?>>
     <th class="copy-number"><?=$this->transEsc('Copy')?> <?=$this->escapeHtml($holding['number'])?> <span class="lboroBarcode">[<?=$this->escapeHtml($holding['barcode'])?>]</span>
       <?php if ($holding['enumchron'] ?? false): ?>
