@@ -72,10 +72,17 @@ class Holdings extends \Laminas\View\Helper\AbstractHelper
         $catalogConfig = $this->config['Catalog'] ?? [];
         $showEmptyBarcodes
             = (bool)($catalogConfig['display_items_without_barcodes'] ?? true);
-        $availabilityStatus = $holding['availability']->isAvailable();
+        $statusDescription = $holding['availability']->getStatusDescription();
 
         return $holding['availability']->isVisibleInHoldings()
             && ($showEmptyBarcodes || strlen($holding['barcode'] ?? '') > 0)
-            && $availabilityStatus;
+            && ( (
+                   strtolower($statusDescription) == 'withdrawn' ||
+                   strtolower($statusDescription) == 'missing' ||
+                   strtolower($statusDescription) == 'missing from bundle' ||
+                   strtolower($statusDescription) == 'paid for' ||
+                   strtolower($statusDescription) == 'repair shelf' ||
+                   strtolower($statusDescription) == 'cancelled'
+                 ) ? false : true );
     }
 }
