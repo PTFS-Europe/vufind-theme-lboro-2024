@@ -2024,7 +2024,7 @@ class KohaRest extends \VuFind\ILS\Driver\AbstractBase implements
                 'callnumber' => $this->getItemCallNumber($item),
                 'duedate' => $duedate,
                 'number' => $item['serial_issue_number'],
-                'barcode' => $item['external_id'],
+                'barcode' => (null == $item['external_id']) ? 'Unknown' : $item['external_id'],
                 'sort' => $i,
                 'requests_placed' => max(
                     [$item['hold_queue_length'],
@@ -2685,7 +2685,7 @@ class KohaRest extends \VuFind\ILS\Driver\AbstractBase implements
                 'id' => $entry['biblio_id'],
                 'checkout_id' => $entry['checkout_id'],
                 'item_id' => $entry['item_id'],
-                'barcode' => $entry['external_id'] ?? null,
+                'barcode' => (null == $entry['external_id']) ? 'Unknown' : $entry['external_id'],
                 'title' => $this->getBiblioTitle($entry),
                 // enumchron should have been mapped to serial_issue_number, but the
                 // mapping is missing from all plugin versions up to v22.05.02:

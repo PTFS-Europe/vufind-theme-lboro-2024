@@ -82,8 +82,7 @@ class Holdings extends \Laminas\View\Helper\AbstractHelper
                    strtolower($statusDescription) == 'missing from bundle' ||
                    strtolower($statusDescription) == 'paid for' ||
                    strtolower($statusDescription) == 'repair shelf' ||
-                   strtolower($statusDescription) == 'cancelled' ||
-                   strtolower($statusDescription) == 'unknownbarcode'
+                   strtolower($statusDescription) == 'cancelled'
                  ) ? false : true );
     }
 }
