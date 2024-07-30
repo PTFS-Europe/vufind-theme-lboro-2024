@@ -289,4 +289,10 @@ fieldset.range {
   }
 }
 
+.sidebar .facet.active,
+.sidebar .facet.active:hover,
+.sidebar .active-filters .facet,
+.sidebar .active-filters .facet:hover {
+  background-color: $lu-african-violet;
+}
  
