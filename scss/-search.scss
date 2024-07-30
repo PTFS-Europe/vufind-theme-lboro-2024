@@ -281,7 +281,7 @@ fieldset.range {
 .alert-info,
 .savedLists,
 .alert-info:hover {
-  background-color: darken($lu-light-gray, 5%);
+  background-color: $lu-light-gray;
   color: $black;
 
   a {
