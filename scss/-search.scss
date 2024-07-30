@@ -279,6 +279,10 @@ fieldset.range {
       margin-top: 1.3rem;
     }
   }
+
+  .searchForm_lookfor {
+    width: 400px!important;
+  }
 }
 
 .alert-info,
@@ -292,13 +296,5 @@ fieldset.range {
   }
 }
 
-.searchForm_lookfor {
-  width: 10rem;
-}
 
  
-// wide view
-
-@media (min-width: 1200px) {
-
-}
