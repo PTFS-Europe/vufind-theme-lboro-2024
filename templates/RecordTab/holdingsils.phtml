@@ -59,7 +59,7 @@
   <?php endif; ?>
 <?php endif; ?>
 <?php $holdingTitleHold = $this->driver->tryMethod('getRealTimeTitleHold'); ?>
-<?php if (!empty($holdingTitleHold) && (!$format == 'ebook') && (!$format == 'serial')): ?>
+<?php if (!empty($holdingTitleHold) && ($format != 'ebook' && $format != 'serial')): ?>
   <a class="placehold icon-link" data-lightbox title="<?=$this->transEscAttr('request_place_text')?>" href="<?=$this->escapeHtmlAttr($this->recordLinker()->getRequestUrl($holdingTitleHold))?>">
     <?=$this->icon('place-hold', 'icon-link__icon') ?>
     <span class="icon-link__label"><?=$this->transEsc('title_hold_place')?></span>
