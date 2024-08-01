@@ -117,6 +117,14 @@
     </td>
   </tr>
   <?php endif; ?>
+  <tr class="holding-row" vocab="http://schema.org/" typeof="Offer">
+    <td colspan="2" class="holding-available">
+      <div class="holding-details">
+        <span class="holding-field copy-number"><strong>Copy number</strong></span>
+        <span class="holding-field shelving_loc"><strong>Shelving location</strong></span>
+        <span class="holding-field availability text-end"><strong>Availability</strong></span>
+      </div>
+  </tr>
   <?php foreach ($holding['textfields'] ?? [] as $textFieldName => $textFields): ?>
     <tr>
       <?php // Translation for summary is a special case for backwards-compatibility ?>
