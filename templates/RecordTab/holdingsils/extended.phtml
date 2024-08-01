@@ -17,6 +17,15 @@
     $checkILLRequest = $holding['checkILLRequest'] ?? false;
     $availabilityStatus = $holding['availability'];
   ?>
+  <tr class="holding-row" vocab="http://schema.org/" typeof="Offer">
+    <td colspan="2" class="holding-available">
+      <div class="holding-details">
+        <span class="holding-field copy-number"><strong>Copy number</strong></span>
+        <span class="holding-field barcode"><strong>Barcode</strong></span>
+        <span class="holding-field shelving_loc"><strong>Shelving location</strong></span>
+        <span class="holding-field availability text-end"><strong>Availability</strong></span>
+      </div>
+  </tr>
   <tr class="holding-row"<?=$this->schemaOrg()->getAttributes(['vocab' => 'http://schema.org/', 'typeof' => 'Offer'])?>>
     <td colspan="2" class="holding-<?=$availabilityStatus->isAvailable() ? 'available' : 'unavailable' ?>">
       <div class="holding-details">
@@ -26,7 +35,14 @@
         <span class="holding-field barcode">
           <?=$this->escapeHtml($holding['barcode'])?>
         </span>
-        <span class="holding-field availability">
+        <span class="holding-field shelving_loc">
+          <?php if($holding['shelving_loc'] ?? false): ?>
+            <?=$this->escapeHtml($holding['shelving_loc'])?>
+          <?php else: ?>
+            <em>Unknown</em>
+          <?php endif; ?>
+        </span>
+        <span class="holding-field availability text-end">
           <?php if ($holding['reserve'] == 'Y'): ?>
             <?=$this->schemaOrg()->getLink('http://schema.org/InStoreOnly', 'availability')?>
             <?=$this->transEsc('On Reserve - Ask at Circulation Desk')?><br>

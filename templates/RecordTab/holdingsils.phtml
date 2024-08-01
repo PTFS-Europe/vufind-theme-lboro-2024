@@ -104,8 +104,8 @@
   <?php $callNos = $this->tab->getUniqueCallNumbers($holding['items'], true); ?>
   <?php if (!empty($callNos)): ?>
   <tr>
-    <th><?=$this->transEsc('Call Number')?>: </th>
     <td>
+      <strong><?=$this->transEsc('Call Number')?>:</strong>
       <?php foreach ($callNos as $callNo): ?>
         <?php if ($this->callnumberHandler): ?>
           <a href="<?=$this->url('alphabrowse-home') ?>?source=<?=$this->escapeHtmlAttr($this->callnumberHandler) ?>&amp;from=<?=$this->escapeHtmlAttr($callNo['callnumber']) ?>"><?=$this->escapeHtml($callNo['display'])?></a>
