@@ -4,9 +4,9 @@
   $prefix = chr( 0 ) . '*' . chr( 0 );
   $status = $array[ $prefix . $prop_name ];
 ?>
-<?php if('Available' == $status): ?>
+<?php if(strcmp( $this->transEsc('Available'), $status ) == 0): ?>
   <span class="label label-success"><?=$this->transEsc('Available')?></span>
-<?php elseif('Reference' == $status): ?>
+<?php elseif(strcmp( $this->transEsc('Reference'), $status ) == 0): ?>
   <span class="label label-warning"><?=$this->transEsc('Reference')?></span>
 <?php elseif(strcmp( $this->transEsc('Checked Out'), $status ) == 0): ?>
   <span class="label label-danger"><?=$this->transEsc('Checked Out')?></span>
