@@ -59,7 +59,7 @@
                                 <?php if ($account->getSessionInitiator($this->serverUrl($this->url('myresearch-home')))) : ?>
                                     <a href="<?= $this->url('myresearch-userlogin') ?>" class="icon-link">
                                         <?= $this->icon('sign-in', 'icon-link__icon') ?>
-                                        <span class="icon-link__label"><?= $this->transEsc('Login') ?></span>
+                                        <span class="icon-link__label"><?= $this->transEsc('Institutional Login') ?></span>
                                     </a>
                                 <?php else : ?>
                                     <a href="<?= $this->url('myresearch-userlogin') ?>" class="icon-link" data-lightbox>
