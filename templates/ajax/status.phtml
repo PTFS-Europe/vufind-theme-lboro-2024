@@ -1,1 +1,19 @@
-<?=$this->availabilityStatus()->renderStatusForAjaxResponse($this->availabilityStatus);
+<?php
+  $prop_name = 'status';
+  $array = (array)$this->availabilityStatus;
+  $prefix = chr( 0 ) . '*' . chr( 0 );
+  $status = $array[ $prefix . $prop_name ];
+?>
+<?php if('Available' == $status): ?>
+  <span class="label label-success"><?=$this->transEsc('Available')?></span>
+<?php elseif('Reference' == $status): ?>
+  <span class="label label-warning"><?=$this->transEsc('Reference')?></span>
+<?php elseif(strcmp( $this->transEsc('Checked Out'), $status ) == 0): ?>
+  <span class="label label-danger"><?=$this->transEsc('Checked Out')?></span>
+<?php else: ?>
+  <?php if("UnknownBarcode" == $status): ?>
+    <!-- do nothing -->
+  <?php else: ?>
+    <span class="label label-default"><?=$this->transEsc($status)?></span>
+  <?php endif; ?>
+<?php endif; ?>
