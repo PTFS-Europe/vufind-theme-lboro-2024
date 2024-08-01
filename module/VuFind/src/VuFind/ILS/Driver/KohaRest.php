@@ -2017,6 +2017,7 @@ class KohaRest extends \VuFind\ILS\Driver\AbstractBase implements
                 'id' => $id,
                 'item_id' => $item['item_id'],
                 'location' => $this->getItemLocationName($item),
+                'shelving_loc' => $item['location_description'],
                 'availability' => $available,
                 'status' => $status,
                 'status_array' => $statusCodes,
