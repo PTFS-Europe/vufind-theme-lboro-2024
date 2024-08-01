@@ -2016,12 +2016,13 @@ class KohaRest extends \VuFind\ILS\Driver\AbstractBase implements
             $entry = [
                 'id' => $id,
                 'item_id' => $item['item_id'],
-                'location' => (
+                'location' => $this->getItemLocationName($item),
+                'combined_loc' => (
                     null == $item['location_description'] ?
                     $this->getItemLocationName($item) :
                     $this->getItemLocationName($item) . ' - ' . $item['location_description']
                 ),
-                'library_loc'  => $this->getItemLocationName($item),
+                'library_loc' => $this->getItemLocationName($item),
                 'shelving_loc' => $item['location_description'],
                 'availability' => $available,
                 'status' => $status,
