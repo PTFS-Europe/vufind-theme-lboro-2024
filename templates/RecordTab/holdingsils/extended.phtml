@@ -21,7 +21,6 @@
     <td colspan="2" class="holding-available">
       <div class="holding-details">
         <span class="holding-field copy-number"><strong>Copy number</strong></span>
-        <span class="holding-field barcode"><strong>Barcode</strong></span>
         <span class="holding-field shelving_loc"><strong>Shelving location</strong></span>
         <span class="holding-field availability text-end"><strong>Availability</strong></span>
       </div>
@@ -30,10 +29,7 @@
     <td colspan="2" class="holding-<?=$availabilityStatus->isAvailable() ? 'available' : 'unavailable' ?>">
       <div class="holding-details">
         <span class="holding-field copy-number">
-          <?=$this->transEsc('Copy')?> <?=$this->escapeHtml($holding['number'])?>
-        </span>
-        <span class="holding-field barcode">
-          <?=$this->escapeHtml($holding['barcode'])?>
+          <?=$this->transEsc('Copy')?> <?=$this->escapeHtml($holding['number'])?>[<?=$this->escapeHtml($holding['barcode'] ?? 'Unknown')?>]
         </span>
         <span class="holding-field shelving_loc">
           <?php if($holding['shelving_loc'] ?? false): ?>
