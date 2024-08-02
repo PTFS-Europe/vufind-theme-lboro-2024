@@ -39,6 +39,13 @@
 
 .nav>li>a.nav-link {
   color: $lu-cedar!important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $light-gray!important;
+    color: $lu-african-violet!important;
+  }
 }
 
 
