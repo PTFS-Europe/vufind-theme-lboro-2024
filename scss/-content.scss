@@ -46,5 +46,15 @@
 
 .table-striped a {
   color: $lu-african-violet!important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.table-striped .btn {
+  color: $white;
 }
 
