@@ -101,6 +101,10 @@
   }
 }
 
+form .form-control:focus {
+  outline-color: $lu-cedar!important;
+}
+
 header {
   .btn-primary {
     text-underline-offset: 0.3rem;
