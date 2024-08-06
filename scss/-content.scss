@@ -37,14 +37,18 @@
 
 /* Book location tabs */
 
-.nav-tabs .nav-link {
-  color: $lu-cedar!important;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $light-gray!important;
-    color: $lu-african-violet!important;
+.record-tabs {
+  .nav-tabs {
+    .nav-link {
+      color: $lu-cedar!important;
+    
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $light-gray!important;
+        color: $lu-african-violet!important;
+      }
+    }
   }
 }
 
