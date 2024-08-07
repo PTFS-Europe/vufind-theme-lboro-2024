@@ -278,12 +278,20 @@ header {
         .navbar-right {
           li a {
             padding: 15px;
+
+            &:focus {
+              outline-color: $white!important;
+            }
           }
         }
   
         .chin-title {
           a {
             font-size: 1.85rem;
+
+            &:focus {
+              outline-color: $white!important;
+            }
           }
         }
       }
