@@ -44,7 +44,6 @@
 
   .searchForm-query {
     display: block;
-    
   }
 
   .btn-link {
@@ -82,12 +81,11 @@
       box-shadow: none 0!important;
 
     &:focus {
-      border: none 0!important;
-      border-bottom: 3px solid #B1BE2D!important;
+      border: solid 2px $lu-cedar!important;
+      /* border-bottom: 3px solid #B1BE2D!important; */
       outline: none 0;
       box-shadow: none 0!important;
     }
-
   }
 
   .advanced-search-link {
