@@ -22,6 +22,10 @@ footer {
       color: $white;
       text-decoration: none;
     }
+
+    &:focus {
+      outline-color: $white!important;
+    }
   }
 
   
