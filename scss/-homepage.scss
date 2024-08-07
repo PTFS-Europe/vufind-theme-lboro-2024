@@ -93,6 +93,12 @@
       font-family: din-2014, sans-serif;
       font-weight: 600;
     }
+
+    a {
+      &:hover {
+        outline-color: $lu-cedar-light;
+      }
+    }
   }
 
 
