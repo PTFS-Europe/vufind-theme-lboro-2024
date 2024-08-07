@@ -59,6 +59,10 @@ header {
     margin-bottom: 1.25rem;
     margin-top: 20px;
     padding: 0;
+
+    &:focus {
+      outline-color: $white!important;
+    }
   }
 
   .nav,
@@ -91,6 +95,10 @@ header {
         color: $white!important;
         text-decoration: underline;
         text-decoration-color: $white!important;
+      }
+
+      &:focus {
+        outline-color: $white!important;
       }
     }
   }
