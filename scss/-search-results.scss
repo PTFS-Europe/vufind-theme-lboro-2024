@@ -32,3 +32,10 @@
 .sidebar .facet .badge {
   text-decoration: none;
 }
+
+.facet-group .facet a {
+  &:focus {
+    outline-color: $lu-cedar-light!important;
+  }
+}
+
