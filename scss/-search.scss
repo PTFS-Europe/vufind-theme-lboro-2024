@@ -71,12 +71,9 @@
   .form-control,
   .btn,
   .search-filter-toggle {
-    border-radius: 0!important;
-  }
-
-  .form-control {
     border: none 0!important;
       /* border-bottom: 3px solid $white!important; */
+      border-radius: 0!important;
       outline: none 0;
       box-shadow: none 0!important;
 
