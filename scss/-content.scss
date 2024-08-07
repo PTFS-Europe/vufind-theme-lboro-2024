@@ -1,6 +1,8 @@
 // Content styles
 
-
+a:focus {
+  outline-color: $lu-cedar-light!important;
+}
 
 // main
 .main {
