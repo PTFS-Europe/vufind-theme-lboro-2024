@@ -237,10 +237,11 @@ a.toolbar-btn,
   border-radius: 0;
 }
 
-fieldset.solr-facets,
-fieldset.range {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.template-dir-search .template-name-advanced {
+  fieldset {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
   .solr-adv-facet {
     margin-bottom: 1rem;
