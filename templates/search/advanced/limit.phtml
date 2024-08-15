@@ -8,7 +8,8 @@
 ?>
 <?php if (count($limitList) > 1): ?>
   <fieldset class="limits">
-    <label for="limit"><?=$this->transEsc('Results per page')?></label>
+    <legend><?=$this->transEsc('Results per page')?></legend>
+    <label for="limit" class="sr-only"><?=$this->transEsc('Results per page')?></label>
     <select id="limit" name="limit" class="form-control">
       <?php foreach ($limitList as $limitVal): ?>
         <option value="<?=$this->escapeHtmlAttr($limitVal)?>" <?=($limitVal == $defaultLimit) ? 'selected="selected"' : ''?>><?=$this->escapeHtml($limitVal)?></option>
