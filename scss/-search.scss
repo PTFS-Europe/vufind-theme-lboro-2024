@@ -10,38 +10,6 @@
   background-color: $lu-asphalt;
 }
 
-// adv search
-.template-dir-search .template-name-advanced {
-  .main .container {
-    label {
-      float: none;
-      width: 100%;
-      padding: 0;
-      margin-bottom: .5rem;
-      border: 0;
-      border-bottom: 1px solid #e5e5e5;
-      font-size: calc(1.275rem + 0.3vw);
-      line-height: inherit;
-    }
-
-    fieldset {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .solr-adv-facet {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-@media(min-width: 1200px) {
-  .template-dir-search .template-name-advanced {
-    label {
-      font-size:1.5rem
-    }
-  }
-}
 
 //
 .searchbox,
@@ -210,6 +178,26 @@ header {
 
 #content,
 #advSearchForm {
+  label {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: calc(1.275rem + 0.3vw);
+    line-height: inherit;
+  }
+
+  fieldset {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .solr-adv-facet {
+    margin-bottom: 1rem;
+  }
+
   .sidebar {
     padding-bottom: 0.1rem;
     
@@ -302,6 +290,10 @@ a.toolbar-btn,
   }
 
   #advSearchForm {
+    label {
+      font-size:1.5rem
+    }
+
     .sidebar {
       margin-top: 1.3rem;
     }
